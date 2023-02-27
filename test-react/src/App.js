@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+function RegForm() {
+  return (
+    <div className="form-container">
+      <form className="form">
+        <label for="name" name="name" className="form-fieldname">Name</label>
+        <input type="text" placeholder="Enter your name here" className="form-input-field" />
+      </form>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="header-title">Components with react!</h1>
+      <hr style={{ border: "1px solid lightgray" }} />
+      <br />
+      <div>
+        <RegForm />
+      </div>
+    </>
   );
 }
 
